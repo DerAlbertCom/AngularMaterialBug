@@ -1,0 +1,13 @@
+<div [attr.data-test-id]="cfg?.testId">
+  <h1 mat-dialog-title>{{ cfg?.label || 'Confirmation' }}</h1>
+  <mat-dialog-content>
+    @if (cfg?.details; as value) {
+      <p>{{ value }}</p>
+    }
+    @if (cfg?.contentTemplateRef; as value) {
+      <ng-container [ngTemplateOutlet]="value" />
+    }
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+  </mat-dialog-actions>
+</div>

@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strict": true,
+    "target": "ES2022",
+    "lib": ["es2020", "dom"],
+    "paths": {
+      "@dummy/unity-lib": ["projects/unity-lib/src/public-api.ts"],
+      "@dummy/unity-lib/confirm": ["projects/unity-lib/confirm/src/public_api.ts"],
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

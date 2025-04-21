@@ -1,0 +1,32 @@
+{
+  "name": "@dummy/unity-lib",
+  "version": "19.2.8",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/@dummy/unity-lib/"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^19.x",
+    "@angular/material": "^19.x",
+    "@angular/animations": "^19.x",
+    "@angular/common": "^19.x",
+    "@angular/compiler": "^19.x",
+    "@angular/core": "^19.x",
+    "@angular/forms": "^19.x",
+    "@angular/platform-browser": "^19.x",
+    "@angular/platform-browser-dynamic": "^19.x",
+    "@angular/router": "^19.x",
+    "@ngx-translate/core": "^16.x",
+    "@ngx-translate/http-loader": "^16.x",
+    "material-icons": "^1.x",
+    "normalize.css": "^8.x",
+    "ts-mockery": "^1.x"
+  },
+  "devDependencies": {
+    "copyfiles": "file:../../node_modules/copyfiles",
+    "typescript": "file:../../node_modules/typescript"
+  }
+}

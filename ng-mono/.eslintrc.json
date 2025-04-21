@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*.js"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "projects/unity-lib/tsconfig.lib.json", "projects/unity-lib/tsconfig.spec.json"],
+        "createDefaultProgram": true
+      },
+      "extends": ["plugin:@angular-eslint/recommended", "plugin:@angular-eslint/template/process-inline-templates"],
+      "rules": {
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "prefix": "dummy",
+            "style": "kebab-case",
+            "type": "element"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "prefix": "dummy",
+            "style": "camelCase",
+            "type": "attribute"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
+}
