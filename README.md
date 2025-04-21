@@ -3,6 +3,7 @@
 Go to ng-mono folder, run 
 
 ```sh
+npm install
 npm run lib:build
 ```
 
