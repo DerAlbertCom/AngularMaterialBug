@@ -1,8 +1,14 @@
 
 
-Go to ng-mono folder, run `npm run lib:build`.
+Go to ng-mono folder, run 
 
-`cat '.\dist\@dummy\unity-lib\confirm\dummy-confirmation.service.d.ts'`
+```sh
+npm run lib:build
+```
+
+```sh
+cat '.\dist\@dummy\unity-lib\confirm\dummy-confirmation.service.d.ts
+```
 
 ```ts
 import { ComponentType } from '@angular/cdk/portal';
@@ -17,4 +23,4 @@ export declare class DummyConfirmationService {
     static ɵprov: i0.ɵɵInjectableDeclaration<DummyConfirmationService>;
 }
 ```
-The Import includes the hash, which is wrong ;)
+The Import includes the hash, which is wrong ;/ 
